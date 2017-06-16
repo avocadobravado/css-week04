@@ -446,7 +446,9 @@ body {
 nav {
   display: flex;
   border: 5px solid paleturquoise;
-  background: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/19.jpg") center;
+  background-image: url("https://every-tuesday.com/wp-content/uploads/2015/06/03.jpg");
+  background-position: center bottom;
+  animation: animatedBackground 15s linear infinite;
   height: 100vh;
   width: 30vw;
   text-align: center;
@@ -456,27 +458,38 @@ nav {
   color: white;
   z-index: 2;
   text-shadow: 0px 0px 5px #333; }
-
-.side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 5px solid tomato;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: inherit;
-  width: inherit; }
-  .side h1 {
-    font-size: 24px; }
-
-.circle {
-  border: 5px solid powderblue;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/19.jpg");
-  background-size: cover; }
+@keyframes animatedBackground {
+  from {
+    background-position: 0 100%; }
+  to {
+    background-position: 100% 100%; } }
+  nav .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid tomato;
+    background-color: rgba(255, 255, 250, 0.98);
+    height: inherit;
+    width: inherit;
+    padding-top: 4%; }
+    nav .side h1 {
+      font-size: 2em;
+      flex-wrap: wrap;
+      border: 5px solid yellow; }
+  nav .circle {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 auto;
+    background-size: cover; }
+    nav .circle img {
+      width: 100%;
+      border-radius: 50%;
+      border: 5px solid green; }
+  nav ul {
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      list-style-type: none; }
 
 .wrapper {
   width: 100%;
