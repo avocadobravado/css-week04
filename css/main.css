@@ -446,6 +446,31 @@ body {
   font-size: 1.45em;
   letter-spacing: 0.015em; }
 
+p, li {
+  font-family: "Didact Gothic", sans-serif; }
+
+li, a {
+  transition: all 0.2s ease-in-out; }
+  li:hover, a:hover {
+    color: mistyrose;
+    transform: translateY(-0.1em);
+    opacity: 0.3; }
+  li:visited, a:visited {
+    color: #fafafa; }
+    li:visited:active, a:visited:active {
+      color: mistyrose; }
+
+i:hover {
+  color: #fafafa; }
+
+::selection {
+  background-color: #ff9f95;
+  color: white;
+  opacity: 0.1; }
+
+h2 {
+  font-family: "Merriweather", sans-serif; }
+
 nav {
   display: flex;
   background-image: url("../img/pic.png");
@@ -502,38 +527,37 @@ nav {
   .icons li {
     padding: 25px 10px; }
 
-p, li {
-  font-family: "Didact Gothic", sans-serif; }
-
-li, a {
-  transition: all 0.2s ease-in-out; }
-  li:hover, a:hover {
-    color: mistyrose;
-    transform: translateY(-0.1em);
-    opacity: 0.3; }
-  li:visited, a:visited {
-    color: #fafafa; }
-    li:visited:active, a:visited:active {
-      color: mistyrose; }
-
-i:hover {
-  color: #fafafa; }
-
-::selection {
-  background-color: #ff9f95;
-  color: white;
-  opacity: 0.1; }
-
 .wrapper {
   width: 100%; }
 
 .main {
   margin-left: 30vw;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .main-content {
   margin: auto;
-  padding: 0;
+  border: 5px solid plum;
+  padding: 1% 0;
   width: 85%; }
+
+.intro {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  border: 5px solid olive; }
+
+.services {
+  width: calc(100%);
+  float: left;
+  margin-left: 0; }
+
+.skill {
+  border: 5px solid tomato;
+  width: calc(50%);
+  float: left;
+  margin-left: 0;
+  padding: 1%; }
 
 /*# sourceMappingURL=main.css.map */

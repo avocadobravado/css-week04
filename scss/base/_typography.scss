@@ -7,3 +7,36 @@
    font-size: 1.45em;
    letter-spacing: 0.015em;
  }
+
+ p, li {
+   font-family: $body-font;
+ }
+
+ li, a {
+   transition: all 0.2s ease-in-out;
+   &:hover {
+     color: mistyrose;
+     transform: translateY(-.1em);
+     opacity: 0.3;
+   }
+   &:visited {
+     color: $white;
+   &:active {
+     color: mistyrose;
+   }
+   }
+ }
+
+ i:hover {
+   color: $white;
+ }
+
+ ::selection {
+   background-color: darken(mistyrose, 15%);
+   color: white;
+   opacity: 0.1;
+ }
+
+ h2 {
+   font-family: $brand-font;
+ }
