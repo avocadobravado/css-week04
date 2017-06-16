@@ -4,9 +4,17 @@
 
 
 h1, h3, h5 {
-  font-family: 'Voltaire', sans-serif;
+  font-family: $brand-font, sans-serif;
 }
 
 p, li {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: $body-font, sans-serif;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+  :hover {
+    transform: translateY(-0.2rem);
+    color: red;
+  }
 }

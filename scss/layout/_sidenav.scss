@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  border: 5px solid paleturquoise;
+  // border: 5px solid paleturquoise;
   background-image: url("../img/pic.png");
   background-position: center bottom;
   animation: background 10s linear infinite;
@@ -27,10 +27,12 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid tomato;
+    // border: 5px solid tomato;
     // background: #948e99;
     // background: -webkit-linear-gradient(to right, rgba(148, 142, 153, 1), rgba(46, 20, 55, 1));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(83, 52, 109, .8));
+    // background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(83, 52, 109, .8));
+    // background: linear-gradient(to right, rgba(255, 90, 94, 0.8), rgba(1, 23, 59, .8));
+    background-image: radial-gradient(farthest-corner at 45px 45px , rgba(255, 90, 94, 0.7) 0%, rgba(1, 23, 59, .7) 100%);
     height: inherit;
     width: inherit;
     padding-top: 4%;
@@ -60,11 +62,21 @@ nav {
   ul {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     li {
       list-style-type: none;
       a {
         color: $white;
+        }
       }
     }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  li {
+    padding: 15px ;
   }
 }

@@ -425,15 +425,18 @@ html {
 a {
   color: #e50050;
   text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
 
 h1, h3, h5 {
-  font-family: 'Voltaire', sans-serif; }
+  font-family: "Francois One", sans-serif, sans-serif; }
 
 p, li {
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Didact Gothic", sans-serif, sans-serif; }
+
+a {
+  transition: all 0.2s ease-in-out; }
+  a :hover {
+    transform: translateY(-0.2rem);
+    color: red; }
 
 /**
  * Basic typography style for copy text
@@ -445,7 +448,6 @@ body {
 
 nav {
   display: flex;
-  border: 5px solid paleturquoise;
   background-image: url("../img/pic.png");
   background-position: center bottom;
   animation: background 10s linear infinite;
@@ -466,8 +468,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid tomato;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(83, 52, 109, 0.8));
+    background-image: radial-gradient(farthest-corner at 45px 45px, rgba(255, 90, 94, 0.7) 0%, rgba(1, 23, 59, 0.7) 100%);
     height: inherit;
     width: inherit;
     padding-top: 4%; }
@@ -489,18 +490,39 @@ nav {
       border: 5px solid #fafafa; }
   nav ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
     nav ul li {
       list-style-type: none; }
       nav ul li a {
         color: #fafafa; }
 
+.icons {
+  display: flex;
+  flex-direction: row; }
+  .icons li {
+    padding: 15px; }
+
 p, li {
-  font-family: "Didact Gothic", sans-serif; }
+  font-family: "Didact Gothic", sans-serif;
+  transition: all 0.2s ease-in-out; }
+
+li, a {
+  transition: all 0.3s ease-in-out; }
+  li:hover, a:hover {
+    color: mistyrose;
+    transform: translateY(-0.1em);
+    opacity: 0.3; }
+  li:visited, a:visited {
+    color: inherit; }
+    li:visited:active, a:visited:active {
+      color: inherit; }
 
 ::selection {
   background-color: green;
-  color: white; }
+  color: white;
+  opacity: 0.1; }
 
 .wrapper {
   width: 100%; }

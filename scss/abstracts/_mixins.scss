@@ -62,12 +62,6 @@
     &:focus {
       @content;
     }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
   }
 }
 
