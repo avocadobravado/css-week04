@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+
+//
+// .footer {
+//   @include opacity-secondary;
+//   clear: both;
+//   background-color: $accent-color;
+//   height: 30vh;
+//   @include small-breakpoint {
+//   height: 45vh;
+//   }
+//   .footer-content {
+//     @include grid-column(12);
+//     background-color: $bg-color;
+//     color: $white;
+//     margin-top: 2%;
+//   }
+//   p {
+//     @include grid-column(6);
+//     @include small-breakpoint {
+//     @include grid-column(12);
+//     }
+//   }
+// }

@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  border: 5px solid paleturquoise;
+  background: url('https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/19.jpg') center;
+  height: 100vh;
+  width: 30vw;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  z-index: 2;
+  text-shadow: 0px 0px 5px #333;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid tomato;
+  background-color: rgba(0, 0, 0, .4);
+  height: inherit;
+  width: inherit;
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.circle {
+  border: 5px solid powderblue;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/19.jpg");
+  background-size: cover;
+}

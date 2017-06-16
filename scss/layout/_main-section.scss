@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  font-family: Lato;
+  border: 5px solid peachpuff;
+}
+
+.main {
+  border: 5px solid olive;
+  margin-left: 30vw;
+  // width: 80%;
+  display: flex;
+}
+
+.main-content {
+  margin: auto;
+  border: 5px solid plum;
+  padding: 0;
+  width: 85%;
+}

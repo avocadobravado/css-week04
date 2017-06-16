@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// LI STYLES
+
+@mixin li-styles {
+  display: inline-block;
+  list-style-type: none;
+}
+
+// ALIGN TEXT
+
+@mixin align-text {
+  text-align: center;
+}
+
+// OPACITY
+
+@mixin opacity {
+  opacity: 0.7;
+}
+
+@mixin opacity-secondary {
+  opacity: 0.9;
+}
+
+@mixin hover-effect {
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+//Breakpoints
+
+@mixin xs-breakpoint {
+  @media #{$xs-bp} {
+    @content;
+  }
+}
+
+@mixin small-breakpoint {
+  @media #{$small-bp} {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media #{$medium-bp} {
+    @content;
+  }
+}
+
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
