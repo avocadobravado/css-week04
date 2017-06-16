@@ -1,10 +1,10 @@
 nav {
   display: flex;
   border: 5px solid paleturquoise;
-  background-image: url("https://every-tuesday.com/wp-content/uploads/2015/06/03.jpg");
+  background-image: url("../img/pic.png");
   background-position: center bottom;
-  animation: animatedBackground 15s linear infinite;
-    @keyframes animatedBackground
+  animation: background 10s linear infinite;
+    @keyframes background
       {
       from {
         background-position: 0 100%;
@@ -19,23 +19,29 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  color: white;
+  color: #fafafa;
   z-index: 2;
-  text-shadow: 0px 0px 5px #333;
+  // text-shadow: 0px 0px 5px #333;
 
   .side {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid tomato;
-    background-color: rgba(255, 255, 250, .98);
+    // background: #948e99;
+    // background: -webkit-linear-gradient(to right, rgba(148, 142, 153, 1), rgba(46, 20, 55, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(83, 52, 109, .8));
     height: inherit;
     width: inherit;
     padding-top: 4%;
     h1 {
       font-size: 2em;
+      font-family: $brand-font;
       flex-wrap: wrap;
       border: 5px solid yellow;
+    }
+    p {
+      border: 5px solid thistle;
     }
   }
 
@@ -47,14 +53,18 @@ nav {
     img {
       width: 100%;
       border-radius: 50%;
-      border: 5px solid green;
+      border: 5px solid $white;
     }
   }
+
   ul {
     padding: 0;
     margin: 0;
     li {
       list-style-type: none;
+      a {
+        color: $white;
+      }
     }
   }
 }

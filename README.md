@@ -1,8 +1,8 @@
-# _Sass Project_
+# _Personal Portfolio Project_
 
-#### Week 3 Project - CSS
+#### Week 4 Project - CSS
 
-#### By **Rose Sponseller, June 9, 2017**
+#### By **Rose Sponseller, June 16, 2017**
 
 ## Description
 
@@ -21,18 +21,18 @@ The objective of this assignment was to create a fan/tribute website with Sass, 
 ## Setup/Installation Requirements
 
 * Open CMD/Terminal
-* git clone `https://github.com/avocadobravado/css-week03`
+* git clone `https://github.com/avocadobravado/css-week04`
 * Open index.html file in a browser such as Google Chrome
 
 OR...
 
-* View on gh-pages at [https://avocadobravado.github.io/css-week03](https://avocadobravado.github.io/css-week03)
+* View on gh-pages at [https://avocadobravado.github.io/css-week04](https://avocadobravado.github.io/css-week04)
 
 ## Screenshots of the site
 
-![screenshot of project](https://github.com/avocadobravado/css-week03/blob/master/img/scs.png?raw=true)
+![screenshot of project](https://github.com/avocadobravado/css-week04/blob/master/img/scs.png?raw=true)
 
-![screenshot of project](https://github.com/avocadobravado/css-week03/blob/master/img/scs02.png?raw=true)
+![screenshot of project](https://github.com/avocadobravado/css-week04/blob/master/img/scs02.png?raw=true)
 
 ## How to Use
 
@@ -40,7 +40,7 @@ OR...
 
 ## Known Bugs
 
-* Neat grid may not be responsive on smaller devices, needs further testing
+* Add later
 
 ## Support and contact details
 
@@ -52,7 +52,7 @@ OR...
 
 * HTML
 * CSS
-* SCSS
+* Sass/SCSS
 
 **Other Technologies:**
 
@@ -61,8 +61,7 @@ OR...
 
 ## Acknowledgements
 
-* Hero image by [Laurent Durieux](http://www.laurentdurieux.com/)
-* Gifs from the film "Metropolis" by Fritz Lang
+* Add later
 
 ## License
 

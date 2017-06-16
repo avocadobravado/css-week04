@@ -1,19 +1,26 @@
+p, li {
+  font-family: $body-font;
+}
+
+::selection {
+  background-color: green;
+  color: white;
+}
+
 .wrapper {
   width: 100%;
-  font-family: Lato;
-  border: 5px solid peachpuff;
+  // border: 5px solid peachpuff;
 }
 
 .main {
-  border: 5px solid olive;
+  // border: 5px solid olive;
   margin-left: 30vw;
-  // width: 80%;
   display: flex;
 }
 
 .main-content {
   margin: auto;
-  border: 5px solid plum;
+  // border: 5px solid plum;
   padding: 0;
   width: 85%;
 }

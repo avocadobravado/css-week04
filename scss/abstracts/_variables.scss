@@ -2,15 +2,11 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-//COLORS
+$brand-font: 'Francois One', sans-serif;
+$body-font: 'Didact Gothic', sans-serif;
 
-$primary-color: #775102;      // brown-yellow
-$secondary-color: #a58527;   //dark gray
-$tertiary-color:#c0a976;    // light brown
+// COLORS
 $white: #fafafa;           //  white
-$black: #333;             // black
-$bg-color: #211226;      // purple
-$accent-color: #279791; // blue
 
 
 // BREAKPOINTS
