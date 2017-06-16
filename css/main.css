@@ -427,7 +427,7 @@ a {
   text-decoration: none; }
 
 h1, h3, h5 {
-  font-family: "Francois One", sans-serif, sans-serif; }
+  font-family: "Merriweather", sans-serif, sans-serif; }
 
 p, li {
   font-family: "Didact Gothic", sans-serif, sans-serif; }
@@ -473,12 +473,10 @@ nav {
     width: inherit;
     padding-top: 4%; }
     nav .side h1 {
-      font-size: 2em;
-      font-family: "Francois One", sans-serif;
-      flex-wrap: wrap;
-      border: 5px solid yellow; }
-    nav .side p {
-      border: 5px solid thistle; }
+      font-size: 1.7em;
+      letter-spacing: 0.05em;
+      font-family: "Merriweather", sans-serif;
+      flex-wrap: wrap; }
   nav .circle {
     max-width: 50%;
     max-height: 50%;
@@ -502,25 +500,27 @@ nav {
   display: flex;
   flex-direction: row; }
   .icons li {
-    padding: 15px; }
+    padding: 25px 10px; }
 
 p, li {
-  font-family: "Didact Gothic", sans-serif;
-  transition: all 0.2s ease-in-out; }
+  font-family: "Didact Gothic", sans-serif; }
 
 li, a {
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   li:hover, a:hover {
     color: mistyrose;
     transform: translateY(-0.1em);
     opacity: 0.3; }
   li:visited, a:visited {
-    color: inherit; }
+    color: #fafafa; }
     li:visited:active, a:visited:active {
-      color: inherit; }
+      color: mistyrose; }
+
+i:hover {
+  color: #fafafa; }
 
 ::selection {
-  background-color: green;
+  background-color: #ff9f95;
   color: white;
   opacity: 0.1; }
 

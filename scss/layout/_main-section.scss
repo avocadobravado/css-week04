@@ -1,29 +1,28 @@
 p, li {
   font-family: $body-font;
-  transition: all 0.2s ease-in-out;
-  // &:hover {
-  //   color: green;
-  //   transform: translateY(-.2em);
-  // }
 }
 
 li, a {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &:hover {
     color: mistyrose;
     transform: translateY(-.1em);
     opacity: 0.3;
   }
   &:visited {
-    color: inherit;
+    color: $white;
   &:active {
-    color: inherit;
+    color: mistyrose;
   }
   }
 }
 
+i:hover {
+  color: $white;
+}
+
 ::selection {
-  background-color: green;
+  background-color: darken(mistyrose, 15%);
   color: white;
   opacity: 0.1;
 }
