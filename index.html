@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>Rose Sponseller</title>
   </head>
 
@@ -21,14 +21,14 @@
         <div class="side">
           <h1>Rose Sponseller</h1>
           <div class="circle"><img src="http://www.iconsdb.com/icons/preview/black/circle-xxl.png" class="circle-img"></div>
-          <p>Web Designer &amp; Developer</p>
+          <p>Web &amp; Graphic Designer</p>
 
           <div class="nav">
             <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="icons">
               <li><a href="mailto:rosesponseller@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
@@ -84,7 +84,7 @@
               <h4>I'm currently seeking new opportunities. Drop me a line if you'd like to get in touch. I look forward to hearing from you!</h4>
             </div><!--Headline ends-->
             <div class="form">
-              <div class="input-in">
+              <!-- <div class="input-in">
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="What shall we call you?" />
               </div>
@@ -96,11 +96,19 @@
 
               <div class="input-in">
                 <label for="message">Memo:</label>
-                <textarea id="message" placeholder="How may we help you?"></textarea>
+                <textarea id="message" placeholder="How may we help you?"></textarea> -->
+                <!-- <form action="https://formspree.io/rosesponseller@gmail.com"
+                  method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="hidden" name="_next" value="//site.io/thanks.html">
+                <input type="submit" value="Send">
+            </form>
 
-              <button type="button" name="button">A button</button>
-              </div>
-            </div><!--Form ends-->
+            <button type="submit">Send</button> -->
+
+
+<form action="localhost//formspree.io/rosesponseller@gmail.com" method="POST"><div class="form-group row"><label for="name" class="col-sm-2 col-form-label font-weight-bold text-sm-right">Name</label><div class="col-sm-10"><input type="text" name="name" class="form-control"></div></div><div class="form-group row"><label for="_replyto" class="col-sm-2 col-form-label font-weight-bold text-sm-right">Email</label><div class="col-sm-10"><input type="email" name="_replyto" class="form-control"></div></div><div class="form-group row"><label for="message" class="col-sm-2 col-form-label font-weight-bold text-sm-right">Message</label><div class="col-sm-10"><textarea name="message" class="form-control"></textarea></div></div><input type="hidden" name="_subject" value="[Blinding Stars] New Contact Form Message"> <input type="text" name="_gotcha" style="display:none"><p class="text-center"><input type="submit" value="Send Message" class="btn btn-primary"></p></form>
           </div><!--Contact ends-->
 
         </div><!--Main content-->

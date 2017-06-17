@@ -527,7 +527,8 @@ nav {
 
 .icons {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
   .icons li {
     padding: 25px 10px; }
 
