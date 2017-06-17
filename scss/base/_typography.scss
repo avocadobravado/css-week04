@@ -1,8 +1,5 @@
-/**
- * Basic typography style for copy text
- */
-
  body {
+   background-color: $white;
    color: #333;
    font-size: 1.45em;
    letter-spacing: 0.015em;
@@ -17,7 +14,7 @@
    &:hover {
      color: mistyrose;
      transform: translateY(-.1em);
-     opacity: 0.3;
+     opacity: 0.6;
    }
    &:visited {
      color: $white;
@@ -34,7 +31,7 @@
  ::selection {
    background-color: darken(mistyrose, 15%);
    color: white;
-   opacity: 0.1;
+  //  opacity: 0.1;
  }
 
  h2 {

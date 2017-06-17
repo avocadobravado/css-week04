@@ -1,3 +1,9 @@
+%align {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
 .wrapper {
   width: 100%;
   // border: 5px solid peachpuff;
@@ -20,19 +26,107 @@
 }
 
 .intro {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+  @extend %align;
   border: 5px solid olive;
 }
 
 .services {
   @include grid-column(12);
-
+  @extend %align;
+  flex-wrap: wrap;
+  border: 5px solid mistyrose;
+  .skill {
+    @include grid-column(6);
+    border: 5px solid tomato;
+    padding: 1%;
+    align-self: center;
+  }
 }
 
-.skill {
+.portfolio {
+  @include grid-column(12);
+  @extend %align;
+  flex-wrap: wrap;
   border: 5px solid tomato;
-  @include grid-column(6);
-  padding: 1%;
+  justify-content: center;
+  .category {
+    @include grid-column(6);
+    align-self: center;
+    align-items: center;
+  }
+}
+
+.contact {
+  @include grid-column(12);
+  @extend %align;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  // text-align: center;
+  border: 5px solid thistle;
+  .headline {
+    @include grid-column(8);
+    @include grid-push(2);
+    display: flex;
+    flex-direction: column;
+    color: red;
+    align-items: center;
+    border: 5px solid gray;
+    &h1 {
+      margin-bottom: 0;
+    }
+  }
+  // justify-content: center;
+  .contact-wrapper {
+    @include grid-column(6);
+    border: 5px solid orange;
+    align-self: center;
+    align-items: center;
+  }
+}
+
+// Form
+
+input, select, textarea, button {
+  display: block;
+  margin: 2% auto;
+}
+
+input, select, textarea {
+  width: 300px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+label {
+  color: #aa6300;
+}
+
+input, select {
+  height: 30px;
+}
+
+input:focus, textarea:focus {
+  background-color: #aa6300;
+  color: #fff;
+  font-style: normal;
+  outline: 2px solid #444;
+}
+
+select:focus {
+  font-style: normal;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-in label, .input-in input, .input-in textarea {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#form-submit {
+  margin-top: 20px;
 }
