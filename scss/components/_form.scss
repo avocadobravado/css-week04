@@ -7,14 +7,14 @@ form {
   align-items: center;
 }
 input {
-}
+  }
 textarea {
   height: 100px;
-}
+  }
 input:first-of-type
-{
+  {
   margin-top:35px;
-}
+  }
 input, textarea {
   font-size: 0.6em;
   padding: 15px 10px 10px;
@@ -31,19 +31,19 @@ input, textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-}
+  }
 ::-webkit-input-placeholder {
    color: #888;
-}
+ }
 :-moz-placeholder {
    color: #888;
-}
+ }
 ::-moz-placeholder {
    color: #888;
-}
+ }
 :-ms-input-placeholder {
    color: #888;
-}
+ }
 .submit {
   text-align: center;
   background-color:#777;
@@ -57,10 +57,10 @@ input, textarea {
   cursor: pointer;
   width: 50%;
   color: $white;
-}
+  }
 button:hover, .button:hover {
   background: #444;
-}
+  }
 label.error {
   font-size: 1em;
   display: block;
@@ -71,7 +71,7 @@ label.error {
   margin: auto;
   color: $white;
   border-radius:6px;
-}
+  }
 /* media queries */
 @media (max-width: 700px) {
   label.error {

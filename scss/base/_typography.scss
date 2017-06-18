@@ -1,7 +1,7 @@
  body {
    background-color: $white;
    color: #333;
-   font-size: 1.45em;
+   font-size: 1.4em;
    letter-spacing: 0.015em;
  }
 
@@ -9,18 +9,29 @@
    font-family: $body-font;
  }
 
- a, nav li
+a {
+  font-family: $body-font;
+  text-decoration: none;
+  color: #663399;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: darken(#663399, 15%);
+    // opacity: 0.8;
+  }
+}
+
+ nav a, nav li
    {
    transition: all 0.2s ease-in-out;
    &:hover {
-     color: mistyrose;
+     color: #333;
      transform: translateY(-.1em);
      opacity: 0.6;
    }
    &:visited {
      color: $white;
    &:active {
-     color: mistyrose;
+     color: #333;
    }
   }
  }
@@ -30,7 +41,7 @@
  }
 
  ::selection {
-   background-color: darken(mistyrose, 15%);
+   background-color: #663399;
    color: white;
  }
 

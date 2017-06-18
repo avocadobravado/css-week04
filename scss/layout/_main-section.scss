@@ -43,7 +43,7 @@
   @extend %align;
   flex-wrap: wrap;
   // border: 5px solid tomato;
-  justify-content: center;
+  align-items: center;
   h1 {
     // border: 5px solid tomato;
   }
@@ -59,11 +59,21 @@
       max-height: 30%;
       height: 12vmax;
       width: 50%;
-      flex-grow: 1;
-      border: 5px solid olive;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border: 5px solid #333;
+      }
+      a {
+        margin-top: 5%;
+        line-height: 3em;
+        // border: 5px solid tomato;
+      }
+      .fa {
+        font-size: 0.7em;
+      }
     }
   }
-}
 
 //////////////////////
 /* CONTACT SECTION */

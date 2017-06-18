@@ -419,13 +419,6 @@ html {
 *::after {
   box-sizing: inherit; }
 
-/**
- * Basic styles for links
- */
-a {
-  color: #e50050;
-  text-decoration: none; }
-
 h1, h3, h5 {
   font-family: "Merriweather", sans-serif, sans-serif; }
 
@@ -435,28 +428,36 @@ p, li {
 body {
   background-color: #fafafa;
   color: #333;
-  font-size: 1.45em;
+  font-size: 1.4em;
   letter-spacing: 0.015em; }
 
 p, li {
   font-family: "Didact Gothic", sans-serif; }
 
-a, nav li {
+a {
+  font-family: "Didact Gothic", sans-serif;
+  text-decoration: none;
+  color: #663399;
   transition: all 0.2s ease-in-out; }
-  a:hover, nav li:hover {
-    color: mistyrose;
+  a:hover {
+    color: #402060; }
+
+nav a, nav li {
+  transition: all 0.2s ease-in-out; }
+  nav a:hover, nav li:hover {
+    color: #333;
     transform: translateY(-0.1em);
     opacity: 0.6; }
-  a:visited, nav li:visited {
+  nav a:visited, nav li:visited {
     color: #fafafa; }
-    a:visited:active, nav li:visited:active {
-      color: mistyrose; }
+    nav a:visited:active, nav li:visited:active {
+      color: #333; }
 
 i:hover {
   color: #fafafa; }
 
 ::selection {
-  background-color: #ff9f95;
+  background-color: #663399;
   color: white; }
 
 h2 {
@@ -501,6 +502,8 @@ nav {
       letter-spacing: 0.05em;
       font-family: "Merriweather", sans-serif;
       flex-wrap: wrap; }
+      nav .side h1 a {
+        font-family: "Merriweather", sans-serif; }
   nav .circle {
     max-width: 50%;
     max-height: 50%;
@@ -554,7 +557,7 @@ nav {
   float: left;
   margin-left: 0;
   flex-wrap: wrap;
-  justify-content: center; }
+  align-items: center; }
   .portfolio .portfolio-gallery {
     align-items: center;
     text-align: center; }
@@ -567,8 +570,15 @@ nav {
       max-height: 30%;
       height: 12vmax;
       width: 50%;
-      flex-grow: 1;
-      border: 5px solid olive; }
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border: 5px solid #333; }
+    .portfolio .portfolio-gallery a {
+      margin-top: 5%;
+      line-height: 3em; }
+    .portfolio .portfolio-gallery .fa {
+      font-size: 0.7em; }
 
 /* CONTACT SECTION */
 .contact {

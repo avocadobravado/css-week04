@@ -19,8 +19,8 @@
     <div class="wrapper">
       <nav>
         <div class="side">
-          <h1>Rose Lastname</h1>
-          <div class="circle"><img src="http://www.iconsdb.com/icons/preview/black/circle-xxl.png" class="circle-img"></div>
+          <h1><a href="index.html">Rose Lastname</a></h1>
+          <div class="circle"><a href="index.html"><img src="http://www.iconsdb.com/icons/preview/black/circle-xxl.png" class="circle-img"></a></div>
           <p>Web &amp; Graphic Designer</p>
 
           <div class="nav">
@@ -54,61 +54,47 @@
           <div class="portfolio-gallery">
             <h2>Web Design</h2>
             <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
+              <p>Placeholder until there is an image. Probably just one image per category, but leaving space for two for now.</p>
             </div>
 
             <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
+              <p>Placeholder until there is an image</p>
             </div>
 
-            <!-- <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
-            </div> -->
-
-            <button><a href="#" class="action-button shadow animate blue">View more</a></button>
+            <a href="portfolio.html" class="view-more">More Web Design projects <i class="fa fa-arrow-right"></i></a>
 
             <h2>Graphic Design</h2>
             <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
+              <p>Placeholder until there is an image</p>
             </div>
 
             <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
+              <p>Placeholder until there is an image</p>
             </div>
 
-            <!-- <div class="category">
-              <a href="#">A link to a site <i class="fa fa-arrow-right"></i></a>
-
-            </div> -->
-            <button><a href="#" class="action-button shadow animate blue">View more</a></button>
+            <a href="portfolio.html" class="view-more">More Graphic Design projects <i class="fa fa-arrow-right"></i></a>
 
           </div><!--Category ends-->
         </div><!--Portfolio ends-->
 
 
-          <div class="contact" id="contact">
-            <div class="headline">
-              <h2>Let's chat.</h1>
-              <h4>I'm currently seeking new opportunities. Drop me a line if you'd like to get in touch. I look forward to hearing from you!</h4>
-            </div><!--Headline ends-->
-            <div class="form">
-              <div class="input-in">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="What shall we call you?" />
-              </div>
+        <div class="contact" id="contact">
+          <div class="headline">
+            <h2>Let's chat.</h2>
+            <p>I'm currently seeking new opportunities. Drop me a line if you'd like to get in touch. I look forward to hearing from you!</p>
+          </div><!--Headline ends-->
 
-              <div class="input-in">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Where can we reach you?" />
-              </div>
-
-              <div class="input-in">
-                <label for="message">Memo:</label>
-                <textarea id="message" placeholder="How may we help you?"></textarea>
-            </form>
-            <button type="submit">Send</button>
-          </div>
-          <!--Contact ends-->
+          <form id="contact">
+              <input type="text" name="name" placeholder="Name" /><br />
+              <input  type="email" name="email" placeholder="Email" /><br />
+              <textarea type="text" name="message" placeholder="Message"></textarea><br />
+              <div class="message">Message Sent</div>
+              <button class="submit" type="submit">
+                Send
+              </button>
+            </div>
+          </form><!--Form-->
+        <!--Contact ends-->
 
         </div><!--Main content-->
       </div><!--Main ends-->

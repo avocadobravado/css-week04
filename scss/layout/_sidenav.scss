@@ -47,6 +47,9 @@ nav {
       letter-spacing: 0.05em;
       font-family: $brand-font;
       flex-wrap: wrap;
+      a {
+        font-family: $brand-font;
+      }
       // border: 5px solid yellow;
     }
     p {
