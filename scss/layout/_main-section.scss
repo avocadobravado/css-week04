@@ -20,14 +20,18 @@
 .main-content {
   // display: flex;
   margin: auto;
-  border: 5px solid plum;
+  // border: 5px solid plum;
   padding: 1% 0;
   width: 85%;
 }
 
+////////////////////
+/* INTRO SECTION */
+///////////////////
+
 .intro {
   @extend %align;
-  border: 5px solid olive;
+  // border: 5px solid olive;
 }
 
 .services {
@@ -43,18 +47,40 @@
   }
 }
 
+/////////////////////////////
+/* PORTFOLIO/WORK SECTION */
+////////////////////////////
+
 .portfolio {
   @include grid-column(12);
   @extend %align;
   flex-wrap: wrap;
-  border: 5px solid tomato;
+  // border: 5px solid tomato;
   justify-content: center;
-  .category {
-    @include grid-column(6);
-    align-self: center;
+  h1 {
+    // border: 5px solid tomato;
+  }
+  .portfolio-gallery {
     align-items: center;
+    text-align: center;
+    // border: 5px solid gray;
+    h2 {
+      margin: 1%;
+    }
+    .category {
+      @include grid-column(6);
+      max-height: 30%;
+      height: 12vmax;
+      width: 50%;
+      flex-grow: 1;
+      border: 5px solid olive;
+    }
   }
 }
+
+//////////////////////
+/* CONTACT SECTION */
+//////////////////////
 
 .contact {
   @include grid-column(12);
@@ -63,23 +89,26 @@
   flex-direction: column;
   justify-content: center;
   // text-align: center;
-  border: 5px solid thistle;
+  // border: 5px solid thistle;
   .headline {
     @include grid-column(8);
     @include grid-push(2);
     display: flex;
     flex-direction: column;
-    color: red;
+    color: #333;
     align-items: center;
-    border: 5px solid gray;
+    // border: 5px solid gray;
     &h1 {
       margin-bottom: 0;
     }
+    // form {
+    //   @include grid-column(12);
+    // }
   }
   // justify-content: center;
   .contact-wrapper {
     @include grid-column(6);
-    border: 5px solid orange;
+    // border: 5px solid orange;
     align-self: center;
     align-items: center;
   }
@@ -99,7 +128,7 @@ input, select, textarea {
 }
 
 label {
-  color: #aa6300;
+  color: #333;
 }
 
 input, select {
@@ -107,8 +136,8 @@ input, select {
 }
 
 input:focus, textarea:focus {
-  background-color: #aa6300;
-  color: #fff;
+  background-color: #eee;
+  color: #333;
   font-style: normal;
   outline: 2px solid #444;
 }
@@ -118,7 +147,7 @@ select:focus {
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #fff;
+    color: #333;
 }
 
 .input-in label, .input-in input, .input-in textarea {

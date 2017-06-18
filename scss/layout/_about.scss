@@ -1,0 +1,17 @@
+.intro {
+  @extend %align;
+  // border: 5px solid olive;
+}
+
+.services {
+  @include grid-column(12);
+  @extend %align;
+  flex-wrap: wrap;
+  border: 5px solid mistyrose;
+  .skill {
+    @include grid-column(6);
+    border: 5px solid tomato;
+    padding: 1%;
+    align-self: center;
+  }
+}
