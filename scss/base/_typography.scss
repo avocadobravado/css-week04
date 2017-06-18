@@ -9,7 +9,8 @@
    font-family: $body-font;
  }
 
- li, a {
+ a, nav li
+   {
    transition: all 0.2s ease-in-out;
    &:hover {
      color: mistyrose;
@@ -21,7 +22,7 @@
    &:active {
      color: mistyrose;
    }
-   }
+  }
  }
 
  i:hover {
@@ -31,9 +32,9 @@
  ::selection {
    background-color: darken(mistyrose, 15%);
    color: white;
-  //  opacity: 0.1;
  }
 
  h2 {
    font-family: $brand-font;
+   margin-bottom: 0;
  }

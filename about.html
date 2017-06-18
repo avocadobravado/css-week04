@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Rose Sponseller</title>
+    <title>Rose Lastname</title>
   </head>
 
   <body>
     <div class="wrapper">
       <nav>
         <div class="side">
-          <h1>Rose Sponseller</h1>
+          <h1>Rose Lastname</h1>
           <div class="circle"><img src="http://www.iconsdb.com/icons/preview/black/circle-xxl.png" class="circle-img"></div>
           <p>Web &amp; Graphic Designer</p>
 
           <div class="nav">
             <ul>
-              <li><a href="/index.html" class="active">Home</a></li>
-              <li><a href="about/about.html">About</a></li>
-              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="icons">
@@ -44,55 +44,83 @@
       <div class="main">
         <div class="main-content">
         <!--INTRO SECTION-->
-          <div class="intro">
-            <h2>I'm a lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
+          <div class="about">
+              <div class="about-wrapper">
+                <h2>Hi there, lovely to meet you.</h2>
+              <div class="about-info">
+                <p>I'm Rose Lastname, a designer and developer based in Portland, Oregon. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="about-image">
+                <img src="https://avatars0.githubusercontent.com/u/1746695?v=3" alt="">
+              </div>
+            </div>
           </div><!--Intro ends-->
 
         <!--SERVICES AND SKILLS-->
           <div class="services">
             <div class="skill">
-              <h3>A skill</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>Code &amp; Web Design</h3>
+              <li>HTML</li>
+              <li>CSS/Sass</li>
+              <li>Bootstrap &amp; Materialize</li>
+              <li>Squarespace</li>
+              <li>Wordpress</li>
+              <li>jQuery</li>
+              <li>JavaScript</li>
             </div>
 
             <div class="skill">
-              <h3>A skill</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>Graphic &amp; UI Design</h3>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InDesign</li>
+              <li>Wireframing</li>
+              <li>Typography</li>
+              <li>MailChimp</li>
+              <li>User Interface Design</li>
             </div>
 
             <div class="skill">
-              <h3>A skill</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>Tools &amp; Other Skills</h3>
+              <li>Git</li>
+              <li>Command Line</li>
+              <li>Jira, Asana, Pivotal Tracker</li>
+              <li>Scrum</li>
+              <li>Pair Programming</li>
+              <li>Behavior Driven Devlopment</li>
+              <li>Slack &amp; HipChat <span class="tip">(with a gif for every occasion!)</span>
+              <li>Number #1 Fan of the Office Dog(s)</li>
             </div>
 
             <div class="skill">
-              <h3>A skill</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3>Hobbies</h3>
+              <li>Knitting</li>
+              <li>Cooking</li>
+              <li>Reading</li>
+              <li>Eating bread</li>
+              <li>Videogames</li>
+              <li>Befriending neighborhood cats</li>
+              <li>The interwebs</li>
             </div>
+
           </div><!--Services ends-->
 
           <div class="contact">
             <div class="headline">
-              <h1>Contact</h1>
-              <h4>I'm currently seeking new opportunities. Drop me a line if you'd like to get in touch. I look forward to hearing from you!</h4>
+              <h2>Let's chat.</h2>
+              <p>I'm currently seeking new opportunities. Drop me a line if you'd like to get in touch. I look forward to hearing from you!</p>
             </div><!--Headline ends-->
-            <div class="form">
-              <div class="input-in">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="What shall we call you?" />
-              </div>
 
-              <div class="input-in">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Where can we reach you?" />
+            <form id="contact">
+                <input type="text" name="name" placeholder="Name" /><br />
+                <input  type="email" name="email" placeholder="Email" /><br />
+                <textarea type="text" name="message" placeholder="Message"></textarea><br />
+                <div class="message">Message Sent</div>
+                <button class="submit" type="submit">
+                  Send!
+                </button>
               </div>
-
-              <div class="input-in">
-                <label for="message">Memo:</label>
-                <textarea id="message" placeholder="How may we help you?"></textarea>
-            </form>
-            <button type="submit">Send</button>
-          </div>
+            </form><!--Form-->
           <!--Contact ends-->
 
         </div><!--Main content-->

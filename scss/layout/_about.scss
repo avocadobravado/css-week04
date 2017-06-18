@@ -1,17 +1,62 @@
-.intro {
+.about {
   @extend %align;
-  // border: 5px solid olive;
+  @include grid-column(12);
+  flex-wrap: wrap;
+  // border: 5px solid thistle;
+  h2 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
 }
+
+.about-wrapper {
+  // border: 5px solid mistyrose;
+  height: inherit;
+  .about-image {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    @include grid-column(6);
+    img {
+      display: flex;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .about-info {
+    @include grid-column(6);
+    padding-left: 3%;
+  }
+}
+
 
 .services {
   @include grid-column(12);
   @extend %align;
   flex-wrap: wrap;
-  border: 5px solid mistyrose;
+  // align-items: center;
+  // border: 5px solid mistyrose;
   .skill {
     @include grid-column(6);
-    border: 5px solid tomato;
+    // border: 5px solid tomato;
     padding: 1%;
-    align-self: center;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    h3 {
+      margin: 0 0 5% 0;
+      font-size: 1.25em;
+    }
+    li {
+      list-style-type: none;
+      line-height: 1.2em;
+      margin: 0 0 0 3%;
+    }
+    .tip {
+      font-style: italic;
+      font-size: 0.6em;
+    }
   }
 }
