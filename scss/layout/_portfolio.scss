@@ -1,0 +1,12 @@
+.portfolio-main {
+  @extend %align;
+  flex-wrap: wrap;
+  align-items: center;
+  .portfolio-project {
+    border: 5px solid #777;
+    flex-basis: 50%;
+    height: 40vh;
+    text-align: center;
+    align-self: flex-end;
+  }
+}
