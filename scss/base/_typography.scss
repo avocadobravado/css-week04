@@ -16,7 +16,6 @@ a {
   transition: all 0.2s ease-in-out;
   &:hover {
     color: darken(#663399, 15%);
-    transform: translateY(-.1em);
   }
 }
 

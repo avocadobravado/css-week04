@@ -18,6 +18,9 @@
     align-items: center;
     height: 70%;
     @include grid-column(6);
+    @include medium-breakpoint {
+      @include grid-column(4);
+      }
     img {
       display: flex;
       width: 100%;
@@ -27,6 +30,9 @@
   .about-info {
     @include grid-column(6);
     padding-left: 3%;
+    @include medium-breakpoint {
+      @include grid-column(8);
+    }
   }
 }
 
@@ -45,6 +51,10 @@
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
+    @include medium-breakpoint {
+      margin: 0 0 5% 0;
+    }
+
     h3 {
       margin: 0 0 5% 0;
       font-size: 1.25em;

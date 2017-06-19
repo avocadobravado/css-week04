@@ -440,8 +440,7 @@ a {
   color: #663399;
   transition: all 0.2s ease-in-out; }
   a:hover {
-    color: #402060;
-    transform: translateY(-0.1em); }
+    color: #402060; }
 
 nav a, nav li {
   transition: all 0.2s ease-in-out; }
@@ -572,6 +571,11 @@ nav {
       align-items: center;
       display: flex;
       border: 5px solid #333; }
+      @media only screen and (max-width: 958px) {
+        .portfolio .portfolio-gallery .category {
+          width: calc(100%);
+          float: left;
+          margin-left: 0; } }
     .portfolio .portfolio-gallery a {
       margin-top: 5%;
       line-height: 3em; }
@@ -622,6 +626,11 @@ nav {
     width: calc(50%);
     float: left;
     margin-left: 0; }
+    @media only screen and (max-width: 958px) {
+      .about-wrapper .about-image {
+        width: calc(33.33333%);
+        float: left;
+        margin-left: 0; } }
     .about-wrapper .about-image img {
       display: flex;
       width: 100%;
@@ -631,6 +640,11 @@ nav {
     float: left;
     margin-left: 0;
     padding-left: 3%; }
+    @media only screen and (max-width: 958px) {
+      .about-wrapper .about-info {
+        width: calc(66.66667%);
+        float: left;
+        margin-left: 0; } }
 
 .services {
   width: calc(100%);
@@ -646,6 +660,9 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 0.9em; }
+    @media only screen and (max-width: 958px) {
+      .services .skill {
+        margin: 0 0 5% 0; } }
     .services .skill h3 {
       margin: 0 0 5% 0;
       font-size: 1.25em; }
@@ -714,6 +731,11 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 958px) {
+    form {
+      width: calc(66.66667%);
+      float: left;
+      margin-left: 0; } }
 
 textarea {
   height: 100px; }

@@ -6,17 +6,7 @@
 
 ## Description
 
-The objective of this assignment was to create a fan/tribute website with Sass, using the Bourbon and Neat Sass libraries with the criteria:
-
-* Nesting is no more than four levels deep
-* Variables are used effectively
-* At least one use of @extend
-* Project is in a polished, portfolio-quality state
-* Requirements are in place by 5:00pm Friday deadline
-* At least one Bourbon @mixin or add-on
-* At least one custom @mixin of your own  
-* Page is responsive using Sass-style media queries and/or a grid
-* Project architecture is well-organized and easy to understand (Feel free to customize the 7-1)
+The objective of this assignment was to create a personal portfolio using Flexbox, Sass, and CSS animations and transitions. The result is not a complete site, but the skeleton of a personal portfolio -- it includes the structure of a personal portfolio, but the site consists of just filler content as of June 18, 2017. Watch this repo in the weeks to come :)
 
 ## Setup/Installation Requirements
 
@@ -24,15 +14,6 @@ The objective of this assignment was to create a fan/tribute website with Sass, 
 * git clone `https://github.com/avocadobravado/css-week04`
 * Open index.html file in a browser such as Google Chrome
 
-OR...
-
-* View on gh-pages at [https://avocadobravado.github.io/css-week04](https://avocadobravado.github.io/css-week04)
-
-## Screenshots of the site
-
-![screenshot of project](https://github.com/avocadobravado/css-week04/blob/master/img/scs.png?raw=true)
-
-![screenshot of project](https://github.com/avocadobravado/css-week04/blob/master/img/scs02.png?raw=true)
 
 ## How to Use
 
@@ -40,7 +21,7 @@ OR...
 
 ## Known Bugs
 
-* Add later
+* Site is not optimized for mobile, just desktop and tablet views.
 
 ## Support and contact details
 
@@ -58,10 +39,7 @@ OR...
 
 * Bourbon
 * Neat
-
-## Acknowledgements
-
-* Add later
+* Font Awesome
 
 ## License
 
